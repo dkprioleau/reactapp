@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./images/logo (1).svg";
+import mockup from "./images/illustration-mockups (1).svg";
+
+import './App.css'; //imports css file to js
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <>
+      
+      <header>
+        <img src={logo} alt="logo"/>
       </header>
-    </div>
+      
+      <main>
+        <img src={mockup} alt="mockup"/>
+        <div className="content"> 
+          <h2> Build the community your fans will love</h2>
+          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+          <button>Register</button>
+        </div>
+      </main>
+      
+      <footer>
+        <i class="fab fa-facebook-f"></i>
+      </footer>
+
+    </>
   );
 }
 
